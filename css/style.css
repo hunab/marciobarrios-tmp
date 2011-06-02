@@ -58,13 +58,13 @@ a:hover {color: white}
 
 section {
   text-align: left;
-  width: 20em;
+  width: 21em;
   height: 6em;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -3em;
-  margin-left: -10em;
+  margin-left: -10.5em;
 }
 
 h1 {
