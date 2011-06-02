@@ -1,0 +1,13 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  UI designer & developer: Marcio Barrios
+  Site: http://marciobarrios.com
+  Twitter: @marciobarrios
+  Location: Barcelona, Spain
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+  Software: Textmate

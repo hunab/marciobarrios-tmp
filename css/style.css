@@ -1,0 +1,299 @@
+/* @group Reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+a:hover, a:active { outline: none; }
+
+::-moz-selection{ background: rgba(255,255,255,.05); text-shadow: none; }
+::selection { background: rgba(255,255,255,.05); text-shadow: none; }
+a:link { -webkit-tap-highlight-color: rgba(255,255,255,.1); }
+button {  width: auto; overflow: visible; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+/* @end */
+
+/* @group Main */
+html, body {height: 100%;}
+body {
+ font: 1em/1.1 "proxima-nova-1","proxima-nova-2", "helvetica neue", arial, sans-serif;
+ color: rgba(255,255,255,.6);
+ 
+ /*text-shadow: 0 1px 0 rgba(0,0,0,.8);*/
+ background-image: url(../img/bg.gif);
+ 
+ background: -moz-radial-gradient(50% 50%, farthest-side, rgba(0,0,0,0), rgba(255,255,255, .2));
+ background-image:  -webkit-gradient(radial, 50% 50%, 700, 50% 50%, 0, from(rgba(0,0,0,0)), to(rgba(255,255,255, .2))), url(../img/bg.gif);
+ 
+}
+
+a, a:active, a:visited { 
+  color: #607890; 
+  text-decoration: none; 
+  -webkit-transition: all .5s;
+     -moz-transition: all .5s;
+       -o-transition: all .5s;
+          transition: all .5s;
+}
+
+a:hover {color: white}
+
+section {
+  text-align: left;
+  width: 20em;
+  height: 6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3em;
+  margin-left: -10em;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+  font-size: 3.45em;
+  
+  /*background: url(../img/text.png);
+    -webkit-background-clip: text;*/
+  color: #fff;
+  text-shadow: 0 0 1px #000;
+  
+  -webkit-animation: h1 2.3s cubic-bezier(.645,.045,.355,1), h1-background 80s 5s infinite linear;
+}
+
+h1:after,
+b:after {
+  content: "UI desiloper";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+               
+  /*text-shadow:  0 1px 0 #333, 
+                0 2px 0 #393939,
+                0 3px 0 #444,
+                0 4px 0 #494949,
+                0 5px 0 #555,
+                0 6px 1px rgba(0,0,0,.2),
+                0 0 5px rgba(0,0,0,.2),
+                0 1px 3px rgba(0,0,0,.4),
+                0 3px 5px rgba(0,0,0,.3),
+                0 5px 10px rgba(0,0,0,.35),
+                0 10px 10px rgba(0,0,0,.3),
+                0 20px 20px rgba(0,0,0,.25);*/
+            
+  text-shadow:  0 1px 0 #888, 
+                0 2px 0 #797979,
+                0 3px 0 #777,
+                0 4px 0 #696969,
+                0 5px 0 #666,
+                0 6px 1px rgba(0,0,0,.2),
+                0 0 5px rgba(0,0,0,.2),
+                0 1px 3px rgba(0,0,0,.4),
+                0 3px 5px rgba(0,0,0,.3),
+                0 5px 10px rgba(0,0,0,.35),
+                0 10px 10px rgba(0,0,0,.3),
+                0 20px 20px rgba(0,0,0,.25);
+}
+
+b:after {
+  content: "*";
+}
+
+b {
+  position: relative;
+  display: inline-block;
+  top: -13px;
+  margin-left: .2em;
+  font-size: 2em;
+  
+  -webkit-animation: asterisk 3s 4s cubic-bezier(.645,.045,.355,1) backwards;
+}
+
+h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin: 1em .2em 0;
+  color: #212121;
+  
+  text-shadow: 0 1px 0 rgba(255,255,255,.25), 0 0 5px rgba(255,255,255,.1);
+  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  
+  -webkit-animation: fadeIn 2s 2.3s 1 alternate ease-in backwards;
+}
+
+#social,
+#info {
+  position: absolute;
+  font-size: .9em;
+  
+  -webkit-animation: fadeIn 2s 6s alternate ease-in backwards;
+}
+
+#social {
+  bottom: 1em;
+  right: 1em;
+}
+
+#info {
+  bottom: 1em;
+  left: 1em;
+}
+
+li {
+  display: inline-block;
+  margin-left: .5em;
+}
+
+li:first-child {
+  margin-left: 0;
+}
+
+li a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  background: url(../img/icons.png) no-repeat;
+}
+
+#linkedin a {
+  background-position: 0 -42px;
+}
+
+#html5 a {
+  background-position: 0 -84px;
+}
+
+/* @end */
+
+/* @group Keyframes */
+@-webkit-keyframes h1 {
+   0%, 65% {
+    opacity:0;
+    -webkit-transform: scale(4.5);
+  }
+  90% {
+    -webkit-transform:translate(0,0);
+  }
+  100% {}
+}
+
+@-webkit-keyframes fadeIn {
+  0%   { opacity: 0; }
+  50%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes asterisk {
+  0%,75% {
+    opacity:0;
+    -webkit-transform:translateY(-800px);
+  }
+  90% {
+	-webkit-transform:translateY(10px);
+    opacity:.5;
+  }
+  100% {}
+}
+
+/*@-webkit-keyframes h1-background {
+  0% {background-position: left bottom; -webkit-text-fill-color: transparent;}
+  100% {background-position: right bottom; -webkit-text-fill-color: transparent;}
+}*/
+
+@-webkit-keyframes h1-background {
+  20% {color: #F0B43C}
+  40% {color: #ED7445}
+  60% {color: #A1B5A7}
+  80% {color: #FADD98}
+  100% {color: #fff}
+}
+/* @end */
+
+
+/* iPhone 4 retina and A-grade mobiles */
+@media all and (-webkit-min-device-pixel-ratio: 2),
+only screen and (max-width: 480px) {
+  section {
+    position: fixed;
+    top: 10em;
+    height: 6em;
+    margin: -3em 0 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.45em;
+  }
+  
+  h2 {
+    font-size: .7em;
+    margin-left: -1em; 
+    margin-top: 1.5em
+  }
+  
+  #social,
+  #info {
+    position: fixed;
+    font-size: .7em;
+    left: 1em;
+    right: 1em;
+    text-align: center;
+
+    -webkit-animation: fadeIn 2s 6s alternate ease-in backwards;
+  }
+  
+  #social {
+    bottom: 1em;
+  }
+
+  #info {
+    bottom: 4.5em;
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) { 
+  li a {
+    background: url(../img/icons@2x.png) no-repeat;
+    background-size: 32px auto; /* nice, but be careful, the background position is as usual*/
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 2) and (orientation : landscape) {
+  section {
+    top: 5em;
+  }
+  #info {
+    font-size: .4em;
+    bottom: 6em;
+  }
+}
